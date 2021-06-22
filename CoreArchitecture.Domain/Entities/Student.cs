@@ -10,6 +10,7 @@ namespace CoreArchitecture.Domain.Entities
     public class Student:IdEntity
     {
         public string Name { get; set; }
+        public string Surname { get; set; }
         public virtual ICollection<Note> Notes { get; set; }
     }
 }

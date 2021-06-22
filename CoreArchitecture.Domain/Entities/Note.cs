@@ -9,7 +9,8 @@ namespace CoreArchitecture.Domain.Entities
     [Table("Note",Schema = "Definition")]
     public class Note:IdEntity
     {
-        public string Name { get; set; }
-        public virtual ICollection<Student> Students { get; set; }
+        public int Note1 { get; set; }
+        public int Note2 { get; set; }
+        public int Note3 { get; set; }
     }
 }
