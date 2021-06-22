@@ -9,7 +9,10 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
+using MediatR;
+using Microsoft.OpenApi.Models;
 
 namespace CoreArchitecture.API
 {
@@ -26,6 +29,11 @@ namespace CoreArchitecture.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Test01.WebUI", Version = "v1" });
+            });
+            services.AddMediatR(typeof(CreateBookHandlers).GetTypeInfo().Assembly);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
