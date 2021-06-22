@@ -3,9 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CoreArchitecture.API.Controllers.Base;
 using Microsoft.Extensions.Logging;
 
-namespace CoreArchitecture.API.Controllers.Base
+namespace CoreArchitecture.API.Controllers
 {
     public class ExceptionController : BaseController
     {
