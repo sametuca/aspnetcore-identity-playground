@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreArchitecture.Facade", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreArchitecture.Handlers", "CoreArchitecture.Handlers\CoreArchitecture.Handlers.csproj", "{525DBD83-9B68-43E5-B813-575839A21082}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreArchitecture.ResponseRequest", "CoreArchitecture.ResponseRequest\CoreArchitecture.ResponseRequest.csproj", "{08558443-BD79-4220-A873-5C4B38995DBA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{525DBD83-9B68-43E5-B813-575839A21082}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{525DBD83-9B68-43E5-B813-575839A21082}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{525DBD83-9B68-43E5-B813-575839A21082}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08558443-BD79-4220-A873-5C4B38995DBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08558443-BD79-4220-A873-5C4B38995DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08558443-BD79-4220-A873-5C4B38995DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08558443-BD79-4220-A873-5C4B38995DBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

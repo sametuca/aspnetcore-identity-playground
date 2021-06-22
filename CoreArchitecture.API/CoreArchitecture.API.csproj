@@ -11,5 +11,11 @@
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.1.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CoreArchitecture.Domain\CoreArchitecture.Domain.csproj" />
+    <ProjectReference Include="..\CoreArchitecture.Facade\CoreArchitecture.Facade.csproj" />
+    <ProjectReference Include="..\CoreArchitecture.Handlers\CoreArchitecture.Handlers.csproj" />
+  </ItemGroup>
+
 
 </Project>
