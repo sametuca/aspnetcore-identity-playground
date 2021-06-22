@@ -10,11 +10,11 @@ namespace CoreArchitecture.Domain
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options):base(options)
         {
-            
+          
         }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Note> Notes { get; set; }
 
-        public DbSet<Student> Students;
-        public DbSet<Note> Notes;
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);

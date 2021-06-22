@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CoreArchitecture.Facade
 {
-    class StudentFacade
+    public class StudentFacade : IStudentFacade
     {
     }
 }

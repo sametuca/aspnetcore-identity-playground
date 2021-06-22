@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CoreArchitecture.Domain
+namespace CoreArchitecture.Domain.Entities
 {
-    class AddTestData
+    public interface IEntity
     {
     }
 }
