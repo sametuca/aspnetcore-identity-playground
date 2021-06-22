@@ -5,4 +5,12 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoreArchitecture.ResponseRequest\CoreArchitecture.ResponseRequest.csproj" />
+  </ItemGroup>
+
 </Project>
