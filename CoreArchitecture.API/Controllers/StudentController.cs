@@ -16,15 +16,13 @@ namespace CoreArchitecture.API.Controllers
         {
             this.studentFacade = studentFacade;
         }
-
+        
+        [HttpGet]
         public IActionResult GetApi()
         {
             return Ok("Api Work");
         }
-        public IActionResult GetAllStudent()
-        {
-            return Ok("Coming soon");
-        }
+
     }
 
 }

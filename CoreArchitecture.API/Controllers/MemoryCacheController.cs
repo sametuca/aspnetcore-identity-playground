@@ -8,7 +8,7 @@ using Microsoft.Extensions.Caching.Memory;
 
 namespace CoreArchitecture.API.Controllers
 {
-    public class MemoryCacheController : BaseController
+    public class MemoryCacheController
     {
         const string cacheKey = "xKey";
         private readonly IMemoryCache _memCache;
