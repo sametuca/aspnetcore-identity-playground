@@ -1,23 +1,17 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
 using CoreArchitecture.Domain;
 using CoreArchitecture.Domain.Entities;
 using CoreArchitecture.Facade;
 using CoreArchitecture.Handlers.Handlers;
 using MediatR;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using System.Collections.Generic;
+using System.Reflection;
 
 namespace CoreArchitecture.API
 {
@@ -41,7 +35,9 @@ namespace CoreArchitecture.API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CoreArchitecture.API", Version = "v1" });
             });
+
             services.AddMediatR(typeof(CreateStudentHandler).GetTypeInfo().Assembly);
+
             var options = new DbContextOptionsBuilder<ApplicationDbContext>()
                 .UseInMemoryDatabase(databaseName: "Test")
                 .Options;
@@ -72,7 +68,7 @@ namespace CoreArchitecture.API
                 context.SaveChanges();
             }
 
-         
+
 
         }
 
@@ -83,7 +79,8 @@ namespace CoreArchitecture.API
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => {
+                app.UseSwaggerUI(c =>
+                {
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", $"Test{env.EnvironmentName})");
                 });
             }
@@ -94,7 +91,8 @@ namespace CoreArchitecture.API
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints => {
+            app.UseEndpoints(endpoints =>
+            {
                 endpoints.MapControllers();
             });
         }

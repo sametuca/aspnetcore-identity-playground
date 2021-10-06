@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using CoreArchitecture.Domain.Entities;
+﻿using CoreArchitecture.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
 
 namespace CoreArchitecture.Domain
 {
     public class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options):base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
-          
+
         }
         public DbSet<Student> Students { get; set; }
         public DbSet<Note> Notes { get; set; }
@@ -27,13 +26,13 @@ namespace CoreArchitecture.Domain
 
         public void AddTestData(ApplicationDbContext context)
         {
-            var testStudent = 
+            var testStudent =
                 new Student
-            {
-                Id = Convert.ToInt32(Guid.NewGuid()),
-                Name = "Samet",
-                Surname = "Uca",
-                Notes = 
+                {
+                    Id = Convert.ToInt32(Guid.NewGuid()),
+                    Name = "Samet",
+                    Surname = "Uca",
+                    Notes =
                     new List<Note>
                     {
                         new Note
@@ -44,10 +43,10 @@ namespace CoreArchitecture.Domain
                             Note3 = 100
                         }
                 }
-            };
+                };
             context.Students.Add(testStudent);
             context.SaveChanges();
         }
     }
-    
+
 }

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CoreArchitecture.ResponseRequest.Response.BaseResponse
+﻿namespace CoreArchitecture.ResponseRequest.Response.BaseResponse
 {
     public class BaseResponse<T>
     {
@@ -10,6 +6,6 @@ namespace CoreArchitecture.ResponseRequest.Response.BaseResponse
     }
     public class BaseResponse : BaseResponse<int>
     {
-        
+
     }
 }

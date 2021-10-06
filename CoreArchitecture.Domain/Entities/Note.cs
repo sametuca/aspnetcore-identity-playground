@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using CoreArchitecture.Domain.Entities.Base;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
-using CoreArchitecture.Domain.Entities.Base;
 
 namespace CoreArchitecture.Domain.Entities
 {
-    [Table("Note",Schema = "Definition")]
-    public class Note:IdEntity, IEntity
+    [Table("Note", Schema = "Definition")]
+    public class Note : IdEntity, IEntity
     {
         public int Note1 { get; set; }
         public int Note2 { get; set; }

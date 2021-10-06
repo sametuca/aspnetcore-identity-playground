@@ -1,10 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using CoreArchitecture.API.Controllers.Base;
+﻿using CoreArchitecture.API.Controllers.Base;
 using CoreArchitecture.Facade;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CoreArchitecture.API.Controllers
 {
@@ -16,7 +12,7 @@ namespace CoreArchitecture.API.Controllers
         {
             this.studentFacade = studentFacade;
         }
-        
+
         [HttpGet]
         public IActionResult GetApi()
         {
