@@ -2,8 +2,8 @@
 
 namespace CoreArchitecture.API.Controllers.Base
 {
+    [Route("api/[controller]")]
     [ApiController]
-    [Route("[controller]")]
 
     public class BaseController : ControllerBase
     {

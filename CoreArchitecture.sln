@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreArchitecture.API", "CoreArchitecture.API\CoreArchitecture.API.csproj", "{8D6D9559-D998-4920-A1EF-D9B30EE854BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreArchitecture.API", "CoreArchitecture.API\CoreArchitecture.API.csproj", "{8D6D9559-D998-4920-A1EF-D9B30EE854BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreArchitecture.Core", "CoreArchitecture.Core\CoreArchitecture.Core.csproj", "{2662B518-88E5-4673-A7C0-44F1D5EA7C71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreArchitecture.Core", "CoreArchitecture.Core\CoreArchitecture.Core.csproj", "{2662B518-88E5-4673-A7C0-44F1D5EA7C71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreArchitecture.Domain", "CoreArchitecture.Domain\CoreArchitecture.Domain.csproj", "{C8971098-A46F-477E-A3B9-B65D9B9EFE1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreArchitecture.Domain", "CoreArchitecture.Domain\CoreArchitecture.Domain.csproj", "{C8971098-A46F-477E-A3B9-B65D9B9EFE1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreArchitecture.Facade", "CoreArchitecture.Facade\CoreArchitecture.Facade.csproj", "{29AC1D23-C2A1-45BA-8D1F-4D9DA5DD42B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreArchitecture.Facade", "CoreArchitecture.Facade\CoreArchitecture.Facade.csproj", "{29AC1D23-C2A1-45BA-8D1F-4D9DA5DD42B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreArchitecture.Handlers", "CoreArchitecture.Handlers\CoreArchitecture.Handlers.csproj", "{525DBD83-9B68-43E5-B813-575839A21082}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreArchitecture.Handlers", "CoreArchitecture.Handlers\CoreArchitecture.Handlers.csproj", "{525DBD83-9B68-43E5-B813-575839A21082}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreArchitecture.ResponseRequest", "CoreArchitecture.ResponseRequest\CoreArchitecture.ResponseRequest.csproj", "{08558443-BD79-4220-A873-5C4B38995DBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreArchitecture.ResponseRequest", "CoreArchitecture.ResponseRequest\CoreArchitecture.ResponseRequest.csproj", "{08558443-BD79-4220-A873-5C4B38995DBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

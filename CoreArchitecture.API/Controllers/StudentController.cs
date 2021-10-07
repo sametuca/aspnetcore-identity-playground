@@ -1,22 +1,26 @@
-﻿using CoreArchitecture.API.Controllers.Base;
-using CoreArchitecture.Facade;
+﻿using CoreArchitecture.Facade;
+using CoreArchitecture.ResponseRequest.Response;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
+using CoreArchitecture.API.Controllers.Base;
 
 namespace CoreArchitecture.API.Controllers
 {
     public class StudentController : BaseController
     {
-        private readonly IStudentFacade studentFacade;
+        private readonly IStudentFacade _studentFacade;
 
         public StudentController(IStudentFacade studentFacade)
         {
-            this.studentFacade = studentFacade;
+            this._studentFacade = studentFacade;
         }
 
         [HttpGet]
-        public IActionResult GetApi()
+        [Route("GetAllStudent")]
+        public Task<GetAllStudentResponse> GetAllStudent()
         {
-            return Ok("Api Work");
+            var response = _studentFacade.GetAllStudent();
+            return response;
         }
 
     }

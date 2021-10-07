@@ -1,6 +1,7 @@
 ﻿using CoreArchitecture.Domain.Entities.Base;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+using CoreArchitecture.Core.Abstract;
 
 namespace CoreArchitecture.Domain.Entities
 {
