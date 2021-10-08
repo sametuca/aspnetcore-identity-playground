@@ -1,3 +1,5 @@
+using CoreArchitecture.API.JWT.Services.PasswordHashers;
+using CoreArchitecture.API.JWT.Services.UserRepositories;
 using CoreArchitecture.Domain;
 using CoreArchitecture.Facade;
 using CoreArchitecture.Handlers.Handlers;
@@ -26,9 +28,9 @@ namespace CoreArchitecture.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-
             services.AddControllers();
+            services.AddSingleton<IPasswordHasher, BcryptPasswordHasher>();
+            services.AddSingleton<IUserRepository, InMemoryUserRepository>();
             services.AddScoped<IStudentFacade, StudentFacade>();
             services.AddMemoryCache();
             services.AddSwaggerGen(c =>

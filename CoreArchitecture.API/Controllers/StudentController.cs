@@ -1,8 +1,8 @@
-﻿using CoreArchitecture.Facade;
+﻿using CoreArchitecture.API.Controllers.Base;
+using CoreArchitecture.Facade;
 using CoreArchitecture.ResponseRequest.Response;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-using CoreArchitecture.API.Controllers.Base;
 
 namespace CoreArchitecture.API.Controllers
 {
