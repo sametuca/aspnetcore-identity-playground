@@ -1,4 +1,4 @@
-﻿namespace CoreArchitecture.API.JWT.Services.PasswordHashers
+﻿namespace CoreArchitecture.Core.Abstract
 {
     public interface IPasswordHasher
     {

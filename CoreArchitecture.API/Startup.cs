@@ -1,4 +1,3 @@
-using CoreArchitecture.API.JWT.Services.PasswordHashers;
 using CoreArchitecture.API.JWT.Services.UserRepositories;
 using CoreArchitecture.Domain;
 using CoreArchitecture.Facade;
@@ -12,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
+using CoreArchitecture.API.Services.PasswordHashers;
+using CoreArchitecture.Core.Abstract;
 
 namespace CoreArchitecture.API
 {

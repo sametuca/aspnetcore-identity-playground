@@ -2,12 +2,12 @@
 using CoreArchitecture.API.JWT.Models;
 using CoreArchitecture.API.JWT.Models.Response;
 using CoreArchitecture.API.JWT.Request;
-using CoreArchitecture.API.JWT.Services.PasswordHashers;
 using CoreArchitecture.API.JWT.Services.UserRepositories;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CoreArchitecture.Core.Abstract;
 
 namespace CoreArchitecture.API.Controllers
 {
